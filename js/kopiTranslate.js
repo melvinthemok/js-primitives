@@ -5,30 +5,33 @@ var rl = readline.createInterface({
   output: process.stdout
 })
 
-rl.question('What drink you want ah? Lowercase please: teh o ping siew dai? kopi si gah dai? kopi o kosong gao? ', function (answer) {
+rl.question('What drink order would you like translated? E.g.: Teh o ping siew dai / Kopi si gah dai / Kopi o kosong gao? ', function (answer) {
+  console.log('OK boss/auntie/uncle/boy/girl, you ordered:')
+  answer = answer.toLowerCase()
+  console.log(answer)
   if (answer.includes('gao')) {
     console.log('concentrated')
   } else if (answer.includes(' po')) {
     console.log('diluted')
   }
-  if (answer.includes('ping')) {
+  if (answer.includes('ping' || 'ice')) {
     console.log('iced')
   }
   if (answer.includes('tarik')) {
     console.log('pulled')
   }
   if (answer.includes('teh')) {
-    console.log('tea coming right up')
+    console.log('tea')
   } else if (answer.includes('kopi')) {
-    console.log('coffee it is')
+    console.log('coffee')
   } else if (answer.includes('milo')) {
-    console.log('hot chocolate for you')
+    console.log('hot chocolate')
   } else if (answer.includes('horlick')) {
-    console.log('malt drink it is')
+    console.log('malt drink')
   } else if (answer.includes('barley')) {
-    console.log('barley for you')
+    console.log('barley')
   } else if (answer.includes('bandung')) {
-    console.log('rose syrup it is')
+    console.log('rose syrup')
   } else if (answer.includes('kickapoo')) {
     console.log('citrus-flavoured drink coming right up')
   }

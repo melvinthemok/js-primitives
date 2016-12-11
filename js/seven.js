@@ -18,11 +18,11 @@ var foods = [
   'Sushi',
   'Chocolate',
   'Pizza'
-];
+]
 
-var donutsPos = foods.indexOf('Donuts');
+var donutsPos = foods.indexOf('Donuts')
 
-foods.splice(donutsPos, 1);
+foods.splice(donutsPos, 1)
 
-console.log("The index of donuts is " + donutsPos + ", and it has been removed.")
-console.log(foods);
+console.log('The index of donuts is ' + donutsPos + ', and it has been removed.')
+console.log(foods)

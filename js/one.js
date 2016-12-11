@@ -11,6 +11,6 @@ var friends = [
   'Grey',
   'Lydia',
   'Harriet'
-];
+]
 
-console.log("The last name is " + friends[friends.length - 1] + ".");
+console.log('The last name is ' + friends[friends.length - 1] + '.')

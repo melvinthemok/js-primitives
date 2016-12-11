@@ -18,8 +18,8 @@ var foods = [
   'Sushi',
   'Chocolate',
   'Pizza'
-];
+]
 
-var phoRank = foods.indexOf('Pho') + 1;
+var phoRank = foods.indexOf('Pho') + 1
 
-console.log("The ranking of pho is " + phoRank + ".");
+console.log('The ranking of pho is ' + phoRank + '.')

@@ -18,10 +18,10 @@ var foods = [
   'Sushi',
   'Chocolate',
   'Pizza'
-];
+]
 
-var fiveToTen = foods.slice(4, 10);
+var fiveToTen = foods.slice(4, 10)
 
 var ten = fiveToTen.pop()
 
-console.log("My fifth to tenth favourite foods are " + fiveToTen + " and " + ten + ".");
+console.log('My fifth to tenth favourite foods are ' + fiveToTen + ' and ' + ten + '.')

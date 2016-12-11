@@ -1,5 +1,5 @@
 var ages = "'Moe' is 18 'Larry' is 19 'Curly' is 20 'Jane' is 20 'Emma' is 21 'Elizabeth' is 18 'Elinor' is 23 'Mary' is 25 'Darcy' is 24 'Grey' is 18 'Lydia' is 24 'Harriet' is 18"
-ages = ages.replace(/'/gi, "")
+ages = ages.replace(/'/gi, '')
 
 var agesSplit = ages.split(' ')
 
@@ -16,8 +16,6 @@ function findKeys (array) {
 
 var foundKeys = findKeys(agesSplit)
 
-console.log(foundKeys)
-
 function findValues (array) {
   var values = []
 
@@ -31,6 +29,15 @@ function findValues (array) {
 
 var foundValues = findValues(agesSplit)
 
-foundValues.map(Number)
+foundValues = foundValues.map(Number)
 
-console.log(foundValues)
+function toObject (names, values) {
+  var result = {}
+  for (var i = 0; i < names.length; i++)
+    result[names[i]] = values[i];
+  return result
+}
+
+object = toObject(foundKeys, foundValues)
+
+console.log(object)

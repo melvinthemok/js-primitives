@@ -11,9 +11,9 @@ var friends = [
   'Grey',
   'Lydia',
   'Harriet'
-];
+]
 
 var sortFriends = friends.sort()
-var lastFriend = sortFriends.pop();
+var lastFriend = sortFriends.pop()
 
-console.log("The alphabetically sorted list of friends are " + sortFriends + ", and " + lastFriend + ".");
+console.log('The alphabetically sorted list of friends are ' + sortFriends + ', and ' + lastFriend + '.')

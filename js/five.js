@@ -10,7 +10,7 @@ var myFriends = [
   'Jory',
   'Septa',
   'Jon'
-];
+]
 
 var yourFriends = [
   'Bilbo',
@@ -21,11 +21,11 @@ var yourFriends = [
   'Gandalf',
   'Legolas',
   'Pippin'
-];
+]
 
-var ourFriends = myFriends.concat(yourFriends);
-var sortOurFriends = ourFriends.sort();
+var ourFriends = myFriends.concat(yourFriends)
+var sortOurFriends = ourFriends.sort()
 
-var lastFriend = sortOurFriends.pop();
+var lastFriend = sortOurFriends.pop()
 
-console.log("Our friends are " + sortOurFriends + ", and " + lastFriend + ".");
+console.log('Our friends are ' + sortOurFriends + ', and ' + lastFriend + '.')
